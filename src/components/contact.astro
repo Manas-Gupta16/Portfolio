@@ -63,21 +63,28 @@
   const form = document.getElementById("contact-form");
   const formMessage = document.getElementById("form-message");
 
-  form.addEventListener("submit", (e) => {
+  form.addEventListener("submit", async (e) => {
     e.preventDefault();
     const name = document.getElementById("contact-name").value;
     const email = document.getElementById("contact-email").value;
     const message = document.getElementById("contact-message").value;
 
-    const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-    const body = encodeURIComponent(`From: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-    const mailtoLink = `mailto:manasg30361@gmail.com?subject=${subject}&body=${body}`;
-
-    window.location.href = mailtoLink;
-
-    form.reset();
-    form.style.display = "none";
-    formMessage.classList.remove("hidden");
-    formMessage.classList.add("flex");
+    try {
+      const response = await fetch("https://formspree.io/f/mrpbwdna", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+      if (response.ok) {
+        form.reset();
+        form.style.display = "none";
+        formMessage.classList.remove("hidden");
+        formMessage.classList.add("flex");
+      } else {
+        alert("There was a problem sending your message. Please try again.");
+      }
+    } catch (error) {
+      alert("There was a problem sending your message. Please try again.");
+    }
   });
 </script>
