@@ -3,104 +3,295 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Intelligence Designed To Evolve</title>
+  <title>Manas Gupta | Backend Developer</title>
   
   <!-- Inter Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   
   <!-- BubbledotICG-FinePos -->
   <link href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos" rel="stylesheet" />
   
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Fixed Background Video -->
   <div class="bg">
     <video class="bg-video" autoplay muted loop playsinline>
       <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4" type="video/mp4" />
     </video>
+    <div class="bg-overlay"></div>
   </div>
   
-  <div class="page">
-    <header class="header anim" style="--d: 0s;">
-      <a href="#" class="logo">
-        <img src="assets/logo.webp" alt="" width="52" height="52" />
-      </a>
-      <div class="nav-container">
-        <button class="burger" aria-expanded="false" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
-        <nav class="nav-pill">
-          <a href="#home" class="active">Home</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-      <a href="https://github.com/Manas-Gupta16" target="_blank" class="sign-in">GitHub</a>
-    </header>
-
-    <div class="menu-overlay hidden"></div>
-    <div class="mobile-menu hidden">
-      <nav class="mobile-nav">
+  <!-- Navigation -->
+  <header class="header anim" style="--d: 0s;">
+    <a href="#home" class="logo">
+      <img src="assets/logo.webp" alt="MG" width="52" height="52" />
+    </a>
+    <div class="nav-container">
+      <button class="burger" aria-expanded="false" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-pill">
         <a href="#home" class="active">Home</a>
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-        <a href="https://github.com/Manas-Gupta16" target="_blank" class="mobile-sign-in">GitHub</a>
       </nav>
     </div>
+    <a href="https://github.com/Manas-Gupta16" target="_blank" class="sign-in">
+      <i class="fa-brands fa-github" style="margin-right: 8px;"></i> GitHub
+    </a>
+  </header>
 
-    <main class="hero">
-      <div class="trust-row anim" style="--d: 0.05s;">
-        <div class="trust-avatars">
-          <div class="avatar a1"><div class="inner"><i class="fa-brands fa-node-js"></i></div></div>
-          <div class="avatar a2"><div class="inner"><i class="fa-solid fa-database"></i></div></div>
-          <div class="avatar a3"><div class="inner"><i class="fa-brands fa-aws"></i></div></div>
-        </div>
-        <div class="trust-pill">Building Scalable Architectures</div>
-      </div>
-
-      <h1 class="headline anim">
-        <span style="--d: 0.12s;">Intelligence</span>
-        <span style="--d: 0.3s;">Designed To Evolve</span>
-      </h1>
-
-      <p class="subhead anim" style="--d: 0.28s;">
-        Build applications that reason, adapt and collaborate using a modular
-        AI platform designed for production.
-      </p>
-
-      <a href="mailto:manasg30361@gmail.com" class="cta anim" style="--d: 0.4s;">
-        Get Started
+  <!-- Mobile Nav -->
+  <div class="menu-overlay hidden"></div>
+  <div class="mobile-menu hidden">
+    <nav class="mobile-nav">
+      <a href="#home" class="active">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <a href="https://github.com/Manas-Gupta16" target="_blank" class="mobile-sign-in">
+        <i class="fa-brands fa-github"></i> GitHub
       </a>
-    </main>
-
-    <footer class="stats-footer">
-      <div class="stat-item anim" style="--d: 0.5s;">
-        <div class="stat-icon">&lt;</div>
-        <div class="stat-value" data-val="120" data-decimals="0" data-suffix="ms">0ms</div>
-        <div class="stat-label">Inference Time</div>
-      </div>
-      <div class="stat-item anim" style="--d: 0.58s;">
-        <div class="stat-icon">%</div>
-        <div class="stat-value" data-val="99.99" data-decimals="2" data-suffix="%">0.00%</div>
-        <div class="stat-label">Platform Uptime</div>
-      </div>
-      <div class="stat-item anim" style="--d: 0.66s;">
-        <div class="stat-icon">*</div>
-        <div class="stat-value" data-val="24" data-decimals="0" data-suffix="/7">0</div>
-        <div class="stat-label">Autonomous Runtime</div>
-      </div>
-      <div class="stat-item anim" style="--d: 0.74s;">
-        <div class="stat-icon">#</div>
-        <div class="stat-value" data-val="2.4" data-decimals="1" data-suffix="M">0.0</div>
-        <div class="stat-label">Context Windows</div>
-      </div>
-    </footer>
+    </nav>
   </div>
+
+  <main class="content-wrapper">
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="trust-row anim" style="--d: 0.1s;">
+          <div class="trust-avatars">
+            <div class="avatar a1"><div class="inner"><i class="fa-brands fa-node-js"></i></div></div>
+            <div class="avatar a2"><div class="inner"><i class="fa-solid fa-database"></i></div></div>
+            <div class="avatar a3"><div class="inner"><i class="fa-brands fa-aws"></i></div></div>
+          </div>
+          <div class="trust-pill">Scalable Backend Architecture</div>
+        </div>
+
+        <h1 class="headline anim">
+          <span style="--d: 0.2s;">Manas Gupta</span>
+          <span style="--d: 0.3s;" class="gradient-text">Backend Developer</span>
+        </h1>
+
+        <p class="subhead anim" style="--d: 0.4s;">
+          Building high-performance APIs, robust server-side systems, and cloud-native platforms using <strong>Node.js</strong>, <strong>Express</strong>, and <strong>MongoDB</strong>.
+        </p>
+
+        <div class="hero-actions anim" style="--d: 0.5s;">
+          <a href="#projects" class="cta">View Projects</a>
+          <a href="#contact" class="cta-secondary">Let's Talk</a>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator anim" style="--d: 0.8s;">
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <h2 class="section-title scroll-reveal">Core <span class="gradient-text">Arsenal</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card glass scroll-reveal" style="--d: 0.1s">
+          <i class="fa-solid fa-server skill-icon"></i>
+          <h3>Backend Development</h3>
+          <p>Node.js, Express.js, MongoDB, Mongoose, REST APIs, JWT Auth, MVC Architecture.</p>
+        </div>
+        <div class="skill-card glass scroll-reveal" style="--d: 0.2s">
+          <i class="fa-solid fa-cloud skill-icon"></i>
+          <h3>Cloud & DevOps</h3>
+          <p>Docker, AWS, Google Cloud Platform, Nginx, CI/CD, Containerization.</p>
+        </div>
+        <div class="skill-card glass scroll-reveal" style="--d: 0.3s">
+          <i class="fa-solid fa-code skill-icon"></i>
+          <h3>Languages & Tools</h3>
+          <p>C++, Python, JavaScript, TypeScript, Git, GitHub, Postman, MongoDB Atlas.</p>
+        </div>
+        <div class="skill-card glass scroll-reveal" style="--d: 0.4s">
+          <i class="fa-brands fa-react skill-icon"></i>
+          <h3>Frontend & Full-Stack</h3>
+          <p>React.js, Next.js, Tailwind CSS, HTML, CSS, Chart.js.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <h2 class="section-title scroll-reveal">Featured <span class="gradient-text">Work</span></h2>
+      <div class="projects-container">
+        
+        <!-- Project 1 -->
+        <div class="project-card glass scroll-reveal">
+          <div class="project-content">
+            <h3>CollabHub</h3>
+            <p class="project-subtitle">Full-Stack Team Collaboration Platform</p>
+            <p class="project-desc">A real-time workspace integrating Next.js frontend with a robust Node/Express backend. Features live socket communication, robust authentication, and comprehensive team management.</p>
+            <div class="tech-stack">
+              <span>Next.js 16</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.IO</span><span>Tailwind</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-link"><i class="fa-brands fa-github"></i> Source Code</a>
+              <a href="#" class="btn-link"><i class="fa-solid fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="code-window">
+              <div class="window-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              </div>
+              <pre><code>const collabHub = new Workspace({
+  realtime: true,
+  stack: ["Next.js", "Node.js", "Socket.IO"],
+  secure: true
+});
+collabHub.init();</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card glass scroll-reveal reverse">
+          <div class="project-content">
+            <h3>TaskFlow</h3>
+            <p class="project-subtitle">Cloud-Native Task Management Platform</p>
+            <p class="project-desc">A highly scalable, containerized architecture built for managing complex workflows. Deployed via Docker with an Nginx reverse proxy.</p>
+            <div class="tech-stack">
+              <span>React</span><span>Vite</span><span>Node.js</span><span>Docker</span><span>Nginx</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn-link"><i class="fa-brands fa-github"></i> Source Code</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="code-window">
+              <div class="window-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+              </div>
+              <pre><code>version: '3.8'
+services:
+  api:
+    build: ./backend
+    ports: ["5000:5000"]
+  web:
+    build: ./frontend
+    ports: ["80:80"]</code></pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & ACHIEVEMENTS SECTION -->
+    <section id="experience" class="section">
+      <div class="split-section">
+        
+        <div class="split-col scroll-reveal">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item glass">
+              <div class="timeline-dot"></div>
+              <h4>Information Domain Coordinator</h4>
+              <h5>Career Development & Placement Cell (CDPC), RBU</h5>
+              <p class="timeline-date">2026 - Present</p>
+              <ul>
+                <li>Managed placement operations for multiple companies and streamlined application distribution.</li>
+                <li>Drafted and circulated placement communications, bridging CDPC teams and stakeholders.</li>
+                <li>Coordinated on-ground execution of online assessments and interviews.</li>
+              </ul>
+            </div>
+            <div class="timeline-item glass mt">
+              <div class="timeline-dot"></div>
+              <h4>Bachelor of Technology, CSE</h4>
+              <h5>Shri Ramdeobaba College of Engineering (RBU)</h5>
+              <p class="timeline-date">2024 - Present</p>
+              <ul>
+                <li>CGPA: 8.78/10</li>
+                <li>Core focus on Data Structures, Algorithms, Operating Systems, and DBMS.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="split-col scroll-reveal" style="--d: 0.2s">
+          <h2 class="section-title">Achievements</h2>
+          <div class="achievements-grid">
+            <div class="achieve-card glass">
+              <i class="fa-solid fa-code"></i>
+              <div class="achieve-info">
+                <h4>CodeChef</h4>
+                <p>Rating: 1322 (1★)</p>
+              </div>
+            </div>
+            <div class="achieve-card glass">
+              <i class="fa-solid fa-ranking-star"></i>
+              <div class="achieve-info">
+                <h4>Codeforces</h4>
+                <p>Rating: 1056</p>
+              </div>
+            </div>
+            <div class="achieve-card glass">
+              <i class="fa-brands fa-meta"></i>
+              <div class="achieve-info">
+                <h4>Meta Hacker Cup</h4>
+                <p>Participant 2025</p>
+              </div>
+            </div>
+            <div class="achieve-card glass">
+              <i class="fa-solid fa-seedling"></i>
+              <div class="achieve-info">
+                <h4>GSSoC 2026</h4>
+                <p>Registered Participant</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+      <div class="glass contact-box scroll-reveal">
+        <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+        <p>I'm always open to discussing backend architectures, cloud deployments, or new opportunities.</p>
+        <div class="contact-links">
+          <a href="mailto:manasg30361@gmail.com" class="contact-btn"><i class="fa-solid fa-envelope"></i> manasg30361@gmail.com</a>
+          <a href="https://linkedin.com/in/manas-gupta-26ab32337/" target="_blank" class="contact-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/Manas-Gupta16" target="_blank" class="contact-btn"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Fixed Stats Footer -->
+  <footer class="stats-footer glass-footer">
+    <div class="stat-item">
+      <div class="stat-icon">&lt;</div>
+      <div class="stat-value" data-val="1322">0</div>
+      <div class="stat-label">CodeChef Rating</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">%</div>
+      <div class="stat-value" data-val="8.78" data-decimals="2">0.00</div>
+      <div class="stat-label">CGPA</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">*</div>
+      <div class="stat-value" data-val="2" data-suffix="+">0</div>
+      <div class="stat-label">Major Projects</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-icon">#</div>
+      <div class="stat-value" data-val="2026">0</div>
+      <div class="stat-label">Graduation</div>
+    </div>
+  </footer>
 
   <script src="main.js"></script>
 </body>
